@@ -1,0 +1,17 @@
+
+.App {
+    text-align: center;
+  }
+  
+  .ui.main.container{
+    margin-top: 6em;
+  }
+
+  .images{
+    width: 300px;
+    height: 220px;
+  
+  } 
+  .text{
+    text-align: center;
+  }
