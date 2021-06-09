@@ -1,2 +1,2 @@
 # React-Frontend-HRMS
-<img href="uml.png"></img>
+<img src="uml.png"></img>
