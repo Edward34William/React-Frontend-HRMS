@@ -26,7 +26,7 @@ function CandidateList() {
 
         <Table.Body>
           {candidates.map((candidate) => (
-            <Table.Row>
+            <Table.Row key={candidate.id}>
               <Table.Cell>{candidate.id}</Table.Cell>
               <Table.Cell>{candidate.firstname}</Table.Cell>
               <Table.Cell>{candidate.lastname}</Table.Cell>
@@ -35,6 +35,9 @@ function CandidateList() {
           ))}
         </Table.Body>
       </Table>
+
+
+      
     </div>
   );
 }

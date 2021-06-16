@@ -3,18 +3,18 @@
 	"CandicateLanguage":[
 	{
 	"id":"1",
-	"name":"candy",
+	"name":"English",
 	"level":"3"
 	},
 	{
 	"id":"2",
-	"name":"candyy",
+	"name":"French",
 	"level":"4"
 	},
 	{
 	"id":"3",
-	"name":"candyu",
-	"level":"7"
+	"name":"Turkish",
+	"level":"5"
 	}
 	],
 	
@@ -42,123 +42,127 @@
 	"CandidateSchool":[
 	{
 	"id":"1",
-	"universityname":"aa",
-	"universitydepartment":"bb",
-	"startdate":"00",
-	"graduateDate":"11"
+	"universityname":"Duzce University",
+	"universitydepartment":"Computer Engineering",
+	"startdate":"2018",
+	"graduateDate":"2022"
 	},
 	{
 	"id":"2",
-	"universityname":"asa",
-	"universitydepartment":"bsb",
-	"startdate":"010",
-	"graduateDate":"101"
+	"universityname":"Bogazici University",
+	"universitydepartment":"Business Management",
+	"startdate":"2020",
+	"graduateDate":"2024"
 	},
 	{
 	"id":"3",
-	"universityname":"saa",
-	"universitydepartment":"sbb",
-	"startdate":"001",
-	"graduateDate":"110"
+	"universityname":"Istanbul University",
+	"universitydepartment":"Medical School",
+	"startdate":"2016",
+	"graduateDate":"2022"
 	}
 	],
 
 	"CandidateWorkExperience":[
 	{
 	"id":"1",
-	"name":"aa" ,
-	"positionName":"bb" ,
-	"startDate":"22" ,
-	"endDate":"55"
+	"name":"Apple" ,
+	"positionName":"IK" ,
+	"startDate":"2020" ,
+	"endDate":"-"
 	},
 	{
 	"id":"2",
-	"name":"asa" ,
-	"positionName":"bsb" ,
-	"startDate":"242" ,
-	"endDate":"525"
+	"name":"Microsoft" ,
+	"positionName":"Software Developer" ,
+	"startDate":"2015" ,
+	"endDate":"2017"
 	},
 	{
 	"id":"3",
-	"name":"aad" ,
-	"positionName":"bdb" ,
-	"startDate":"262" ,
-	"endDate":"556"
+	"name":"Oracle" ,
+	"positionName":"Java Developer" ,
+	"startDate":"2017" ,
+	"endDate":"2020"
 	}
 	],
 	
 	"City":[
 	{
 	"id":"1",
-	"cityName":"a"
+	"cityName":"Bursa"
 	},
 	{
 	"id":"2",
-	"cityName":"ab"
+	"cityName":"Kars"
 	},
 	{
 	"id":"3",
-	"cityName":"abc"
+	"cityName":"Balıkesir/Susurluk"
 	}
 	],
 
 	"Cv":[
-	{
-	"id":"1",
-	"candidate_id":"2",
-	"social_adress_id":"6", 
-	"jobseeker_id":"6"
-	},
-	{
-	"id":"2",
-	"candidate_id":"3",
-	"social_adress_id":"8", 
-	"jobseeker_id":"7"
-	},
-	{
-	"id":"3",
-	"candidate_id":"7",
-	"social_adress_id":"1" ,
-	"jobseeker_id":"2"
-	}
+		{
+			"id": "1",
+			"jobseeker_name": "Kübra",
+			"jobseeker_surname": "Sambur",
+			"jobseekerExperience": "Turkcell",
+			"jobseeker_id": "1"
+		  },
+		  {
+			"id": "2",
+			"jobseeker_name": "Edanur",
+			"jobseeker_surname": "Sambur",
+			"jobseekerExperience": "Vodafone",
+			"jobseeker_id": "2"
+		  },
+		  {
+			"id": "3",
+			"jobseeker_name": "Berkay",
+			"jobseeker_surname": "Ergün",
+			"jobseekerExperience": "Biletinial.com",
+			"jobseeker_id": "3"
+		  }
 	],
 
 	"Employeers":[
 	{
 	"id":"1",
-	"firstName":"Berkay" ,
-	"lastName":"Ergün",
-	"position_id":"3"
+	"firstName":"Ali" ,
+	"lastName":"Kaya",
+	"position_id":"1"
 	},
 	{
 	"id":"2",
-	"firstName":"Kübra",
-	"lastName":"Sambur",
-	"position_id":"4"
+	"firstName":"Ahmet",
+	"lastName":"Aktaş",
+	"position_id":"2"
 	},
 	{
 	"id":"3",
-	"firstName":"Ufuk" ,
-	"lastName":"Yeltekin",
-	"position_id":"5"
+	"firstName":"Ayşe" ,
+	"lastName":"Tekin",
+	"position_id":"3"
 	}
 	],
+
 	"Users":[
 	{
   	"id":"1",
 	"email":"candy@gmail.com",
-	"password":"123"
+	"password":"1asd1223"
 	},
 	{
 	"id":"2",
 	"email":"berkay@gmail.com",
-	"password":"12345"
+	"password":"1sad2345"
 
 	},
 	{
 	"id":"3",
 	"email":"kubra@gmail.com",
-	"password":"123454"
+	"password":"sad13"
 	}
 
 	],
@@ -166,20 +170,20 @@
 	"JobSeekers": [
 	{
 	"id":"1",
-	"first_name":"Berkay",
-	"last_name":"ergun"	
+	"first_name":"Ethem",
+	"last_name":"Şen"	
 	},
 
 	{
 	"id":"2",
-	"first_name":"Kubra",
-	"last_name":"Sambur"	
+	"first_name":"Figen",
+	"last_name":"Aktepe"	
 	},
 
 	{
 	"id":"3",
-	"first_name":"Ufuk",
-	"last_name":"Yeltekin"	
+	"first_name":"Muhammet",
+	"last_name":"Çetin"
 	}
 
 	],
@@ -208,56 +212,86 @@
 	"JobAdvertisement": [
 	{
 	"id":"1",
-	"employer_id":"2",
-	"job_position_id":"3",
-	"city_id":"55",
-	"job_description":"qwdjkdqw",
-	"min_salary,":"4000",
-	"max_salary,":"5000"
-	
-	},
-
-	{
-		"id":"2",
-	"employer_id":"1",
-	"job_position_id":"2",
-	"city_id":"3",
-	"job_description":"q2131sddqw",
-	"min_salary,":"5000",
-	"max_salary,":"6000"	
-	},
-
-	{
-		"id":"1",
-	"employer_id":"1",
-	"job_position_id":"1",
-	"city_id":"5",
-	"job_description":"qwdjkdqw",
-	"min_salary,":"7000",
-	"max_salary,":"8000"
-	}
-
-	],
-
-	"Employers": [
-	{
-	"id":"1",
-	"company_name":"microsoft",
-	"job_id":"1"
+	"employer":"Apple",
+	"job_position":"Designer",
+	"city":"Ankara",
+	"job_description":"Açıklama1",
+	"min_salary":"4000",
+	"max_salary":"5000",
+	"Work_type":"Homeoffice" 
 	
 	},
 
 	{
 	"id":"2",
-	"company_name":"apple",
-	"job_id":"2"	
+	"employer":"Microsoft",
+	"job_position":"Software Developer",
+	"city":"İstanbul",
+	"job_description":"Description",
+	"min_salary":"3000",
+	"max_salary":"6000",
+	"Work_type":"office" 
+	},
+
+	{
+		"id":"3",
+	"employer":"Oracle",
+	"job_position":"Java Developer",
+	"city":"Bursa",
+	"job_description":"Description",
+	"min_salary":"7000",
+	"max_salary":"8000",
+	"Work_type":"Freelancer" 
+	},
+	{
+		"id":"4",
+	"employer":"KodlamaIo",
+	"job_position":"Backend Developer",
+	"city":"Ankara",
+	"job_description":"Description",
+	"min_salary":"7000",
+	"max_salary":"12000",
+	"Work_type":"Full Time" 
+	},
+	{
+		"id":"5",
+	"employer":"Miya Yazılım",
+	"job_position":"Software Database Support",
+	"city":"İzmir",
+	"job_description":"Description",
+	"min_salary":"4000",
+	"max_salary":"7000",
+	"Work_type":"Full Time" 
+	}
+	],
+
+	"Employers": [
+	{
+	"id":"1",
+	"company_name":"microsoft"
+	
+	},
+
+	{
+	"id":"2",
+	"company_name":"apple"
+		
 	},
 
 	{
 	"id":"3",
-	"company_name":"oracle",
-	"job_id":"3"
+	"company_name":"oracle"
+	
 	}
+	],
 
-	]
+
+
+	"JobEmployer": [
+		{
+		"id":"1",
+		"user_companyName":"microsoft",
+		"job_id":"2"
+		}
+		]
 }

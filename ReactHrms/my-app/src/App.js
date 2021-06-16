@@ -3,29 +3,18 @@ import Dashboard from "./layouts/Dashboard";
 import Navi from "./layouts/Navi";
 import "semantic-ui-css/semantic.min.css";
 import { Container } from "semantic-ui-react";
-import { Route, Switch } from "react-router-dom";
-import CandidateList from "./Pages/CandidateList";
-import EmployersList from "./Pages/EmployersList";
-import CvList from "./Pages/CvList";
-import EmployeersList from "./Pages/EmployeersList";
-import JobSeekersList from "./Pages/JobSeekersList";
-import UsersList from "./Pages/UsersList"
+
+
 function App() {
   return (
-    <div>
+    <div className="bg">
       <Navi/>
-      <Container className="main">
-      <Switch>
-          <Route path="/" exact component={Dashboard} />
-          <Route path="/Candidate" exact component={CandidateList} />
-          <Route path="/Employers" exact component={EmployersList} />
-          <Route path="/Cv" exact component={CvList} />
-          <Route path="/Employeers" exact component={EmployeersList} />
-          <Route path="/JobSeekers" exact component={JobSeekersList} />
-          <Route path="/Users" exact component={UsersList} />
-          
-        </Switch>
+      <Container className="main">   
+      
+      <Dashboard/>
+     
       </Container>
+      
     </div>
   );
 }

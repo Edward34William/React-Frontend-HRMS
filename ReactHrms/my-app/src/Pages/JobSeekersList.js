@@ -17,8 +17,8 @@ function JobSeekersList() {
         <Table.Header>
           <Table.Row>
             <Table.HeaderCell>id</Table.HeaderCell>
-            <Table.HeaderCell>E-Mail</Table.HeaderCell>
-            <Table.HeaderCell>Password</Table.HeaderCell>
+            <Table.HeaderCell>First Name</Table.HeaderCell>
+            <Table.HeaderCell>Last Name</Table.HeaderCell>
           </Table.Row>
         </Table.Header>
 

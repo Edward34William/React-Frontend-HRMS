@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import {  Table } from "semantic-ui-react";
+import {  Table , Button} from "semantic-ui-react";
 import EmployersSevice from "../services/EmployersService";
-
+import { NavLink } from "react-router-dom";
 function EmployersList() {
   const [employers, setEmployers] = useState([]);
 
@@ -19,7 +19,7 @@ function EmployersList() {
           <Table.Row>
           <Table.HeaderCell>Id</Table.HeaderCell>
             <Table.HeaderCell>Company Name</Table.HeaderCell>
-            <Table.HeaderCell>Job id</Table.HeaderCell>
+            <Table.HeaderCell>See Details</Table.HeaderCell>
           </Table.Row>
         </Table.Header>
 
@@ -28,7 +28,8 @@ function EmployersList() {
             <Table.Row key={employer.id}>
                <Table.Cell>{employer.id}</Table.Cell> 
               <Table.Cell>{employer.company_name}</Table.Cell>
-              <Table.Cell>{employer.job_id}</Table.Cell>
+              <Table.Cell><Table.Cell ><Button as={NavLink} to={"/JobAdverts"}> Application </Button></Table.Cell></Table.Cell>
+
             </Table.Row>
           ))}
         </Table.Body>

@@ -17,8 +17,9 @@ function CvList() {
         <Table.Header>
           <Table.Row>
             <Table.HeaderCell>id</Table.HeaderCell>
-            <Table.HeaderCell>Candidate Id</Table.HeaderCell>
-            <Table.HeaderCell>Social Adress Id</Table.HeaderCell>
+            <Table.HeaderCell>Job Seeker Name</Table.HeaderCell>
+            <Table.HeaderCell>Job Seekers Surname</Table.HeaderCell>
+            <Table.HeaderCell>Job Seekers Experiencez</Table.HeaderCell>
             <Table.HeaderCell>Job Seekers Id</Table.HeaderCell>
           </Table.Row>
         </Table.Header>
@@ -27,8 +28,9 @@ function CvList() {
           {cvs.map((cv) => (
             <Table.Row>
               <Table.Cell>{cv.id}</Table.Cell>
-              <Table.Cell>{cv.candidate_id}</Table.Cell>
-              <Table.Cell>{cv.social_adress_id}</Table.Cell>
+              <Table.Cell>{cv.jobseeker_name}</Table.Cell>
+              <Table.Cell>{cv.jobseeker_surname}</Table.Cell>
+              <Table.Cell>{cv.jobseekerExperience}</Table.Cell>
               <Table.Cell>{cv.jobseeker_id}</Table.Cell>
             </Table.Row>
           ))}
