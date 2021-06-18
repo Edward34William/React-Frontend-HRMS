@@ -1,11 +1,13 @@
 import axios from "axios"
 
 
-export default class EmployersSevice{
+export default class EmployersService{
     
     getEmployers(){
-        return axios.get("http://localhost:3000/Employers")
+        return axios.get("http://localhost:3000/Employer")
     }
-   
+    getById(id){
+        return axios.get("http://localhost:3000/Employer?id="+id)
+    }
 
 }

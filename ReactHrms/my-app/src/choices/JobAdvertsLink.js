@@ -21,7 +21,7 @@ function JobAdvertsLink() {
         </Card.Content>
         <Card.Content extra>
           
-            <Button as={NavLink} to="/JobAdverts"  color="black" floated="centered">
+            <Button as={NavLink} to="/JobAdverts"  color="red" floated="centered">
               See Job Advertisement List
             </Button>
         </Card.Content>

@@ -1,11 +1,12 @@
 import React from "react";
 import { Button, Card, Image } from "semantic-ui-react";
 
+
 function CvLink() {
   return (
     <div>
       <Card>
-        <Card.Content>
+        <Card.Content >
           <Image
            className="images"
             
@@ -18,7 +19,7 @@ function CvLink() {
           </Card.Description>
         </Card.Content>
         <Card.Content extra>
-            <Button href="http://localhost:3001/Cv" color="black">
+            <Button href="http://localhost:3001/Cv" color="red">
              
               See Cv List
             </Button>

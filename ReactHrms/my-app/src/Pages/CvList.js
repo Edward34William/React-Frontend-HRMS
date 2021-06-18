@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import {  Table } from "semantic-ui-react";
+import {  Table,Button} from "semantic-ui-react";
+import {Link } from "react-router-dom";
 import CvService from "../services/CvService";
 
 function CvList() {
@@ -13,29 +14,30 @@ function CvList() {
 
   return (
     <div>
-      <Table inverted>
+      <Table color="red" size="large">
         <Table.Header>
           <Table.Row>
-            <Table.HeaderCell>id</Table.HeaderCell>
-            <Table.HeaderCell>Job Seeker Name</Table.HeaderCell>
-            <Table.HeaderCell>Job Seekers Surname</Table.HeaderCell>
-            <Table.HeaderCell>Job Seekers Experiencez</Table.HeaderCell>
-            <Table.HeaderCell>Job Seekers Id</Table.HeaderCell>
+            <Table.HeaderCell>First Name</Table.HeaderCell>
+            <Table.HeaderCell>Last Name</Table.HeaderCell>
+            <Table.HeaderCell>See Detail</Table.HeaderCell>
           </Table.Row>
         </Table.Header>
 
         <Table.Body>
           {cvs.map((cv) => (
-            <Table.Row>
-              <Table.Cell>{cv.id}</Table.Cell>
-              <Table.Cell>{cv.jobseeker_name}</Table.Cell>
-              <Table.Cell>{cv.jobseeker_surname}</Table.Cell>
-              <Table.Cell>{cv.jobseekerExperience}</Table.Cell>
-              <Table.Cell>{cv.jobseeker_id}</Table.Cell>
+            <Table.Row key={cv.id}>
+              <Table.Cell>{cv.firstName}</Table.Cell>
+              <Table.Cell>{cv.LastName}</Table.Cell>
+              
+              <Table.Cell><Button color="red"><Link to={`/Cv/${cv.id}`}><b className="text-color">See Detail</b></Link>  </Button></Table.Cell>
             </Table.Row>
           ))}
         </Table.Body>
       </Table>
+      <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+      <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+      <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+      <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
     </div>
   );
 }

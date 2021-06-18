@@ -14,7 +14,7 @@ function EmployeersList() {
 
   return (
     <div>
-      <Table inverted>
+      <Table>
         <Table.Header>
           <Table.Row>
           <Table.HeaderCell>Id</Table.HeaderCell>
@@ -25,14 +25,14 @@ function EmployeersList() {
           </Table.Row>
         </Table.Header>
 
-        <Table.Body>
+        <Table.Body >
           {employeers.map((employeer) => (
             <Table.Row key={employeer.id}>
                <Table.Cell>{employeer.id}</Table.Cell> 
               <Table.Cell>{employeer.firstName}</Table.Cell>
               <Table.Cell>{employeer.lastName}</Table.Cell>
               <Table.Cell>{employeer.position_id}</Table.Cell>
-              <Table.Cell><Table.Cell ><Button as={NavLink} to={"/JobAdverts"}> Application </Button></Table.Cell></Table.Cell>
+              <Table.Cell><Table.Cell ><Button as={NavLink} to={"/JobEmployeersDetail"}> See Detail </Button></Table.Cell></Table.Cell>
             </Table.Row>
           ))}
         </Table.Body>

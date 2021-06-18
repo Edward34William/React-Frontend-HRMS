@@ -1,0 +1,421 @@
+{
+  "CandicateLanguage": [
+    {
+      "id": "1",
+      "name": "English",
+      "level": "3"
+    },
+    {
+      "id": "2",
+      "name": "French",
+      "level": "4"
+    },
+    {
+      "id": "3",
+      "name": "Turkish",
+      "level": "5"
+    }
+  ],
+
+  "Candidate": [
+    {
+      "id": "1",
+      "firstname": "Berkay",
+      "lastname": "Ergün",
+      "identifactionNumber": "12312312312312"
+    },
+    {
+      "id": "2",
+      "firstname": "Kübra",
+      "lastname": "Sambur",
+      "identifactionNumber": "121321312312234"
+    },
+    {
+      "id": "3",
+      "firstname": "Ulaş",
+      "lastname": "Bozkurt",
+      "identifactionNumber": "546565412345"
+    }
+  ],
+
+  "CandidateSchool": [
+    {
+      "id": "1",
+      "universityname": "Duzce University",
+      "universitydepartment": "Computer Engineering",
+      "startdate": "2018",
+      "graduateDate": "2022"
+    },
+    {
+      "id": "2",
+      "universityname": "Bogazici University",
+      "universitydepartment": "Business Management",
+      "startdate": "2020",
+      "graduateDate": "2024"
+    },
+    {
+      "id": "3",
+      "universityname": "Istanbul University",
+      "universitydepartment": "Medical School",
+      "startdate": "2016",
+      "graduateDate": "2022"
+    }
+  ],
+
+  "CandidateWorkExperience": [
+    {
+      "id": "1",
+      "name": "Apple",
+      "positionName": "IK",
+      "startDate": "2020",
+      "endDate": "-"
+    },
+    {
+      "id": "2",
+      "name": "Microsoft",
+      "positionName": "Software Developer",
+      "startDate": "2015",
+      "endDate": "2017"
+    },
+    {
+      "id": "3",
+      "name": "Oracle",
+      "positionName": "Java Developer",
+      "startDate": "2017",
+      "endDate": "2020"
+    }
+  ],
+
+  "City": [
+    {
+      "id": "1",
+      "cityName": "Bursa"
+    },
+    {
+      "id": "2",
+      "cityName": "Kars"
+    },
+    {
+      "id": "3",
+      "cityName": "Balıkesir/Susurluk"
+    }
+  ],
+
+  "Cv": [
+    {
+      "id": "1",
+      "firstName": "Kübra",
+      "LastName": "Sambur",
+      "phone_number":"0545523423324",
+      "Adress": ".... Kars",
+      "school": "Duzce University",
+      "workExperience": "Turkcell,Apple, Microsoft",
+      "cover_letter":"blabla",
+      "Github": "https://github.com/kubrasambur",
+      "image": "https://react.semantic-ui.com/images/avatar/large/molly.png"
+    },
+    {
+      "id": "2",
+      "firstName": "Berkay",
+      "LastName": "Ergün",
+      "phone_number":"0123213",
+      "Adress": ".... Bursa",
+      "school": "Duzce University",
+      "workExperience": "Vodafone,Turkcell, Turktelekom",
+      "Github": "https://github.com/Berkayergun16",
+      "cover_letter" : "blabla",
+      "image": "https://react.semantic-ui.com/images/avatar/large/steve.jpg"
+      
+    },
+    {
+      "id": "3",
+      "firstName": "Edanur",
+      "LastName": "Sambur",
+      "phone_number":"054233554",
+      "Adress": ".... Kars",
+      "school": "Duzce University",
+      "workExperience": "Biletinial , DijitalSahne",
+      "Github": "https://github.com/Berkayergun16",
+      "cover_letter" : "blabla",
+      "image": "https://react.semantic-ui.com/images/avatar/large/jenny.jpg"
+      
+    },
+    {
+      "id": "4",
+      "firstName": "Muhammed",
+      "LastName": "Şen",
+      "phone_number":"05346776212",
+      "Adress": ".... Ankara",
+      "school": "Duzce University",
+      "workExperience": "Biletinial , DijitalSahne",
+      "Github": "https://github.com/Berkayergun16",
+      "cover_letter" : "blabla",
+      "image": "https://react.semantic-ui.com/images/avatar/large/matthew.png"
+      
+      
+    },
+    {
+      "id": "5",
+      "firstName": "Figen",
+      "LastName": "Çelik",
+      "phone_number":"05346776212",
+      "Adress": ".... Düzce",
+      "school": "Duzce University",
+      "workExperience": "Biletinial , DijitalSahne",
+      "Github": "https://github.com/Berkayergun16",
+      "cover_letter" : "blabla",
+      "image": "https://react.semantic-ui.com/images/avatar/large/jenny.jpg"
+    },
+    {
+      "id": "5",
+      "firstName": "Figen",
+      "LastName": "Çelik",
+      "phone_number":"05346776212",
+      "Adress": ".... Düzce",
+      "school": "Duzce University",
+      "workExperience": "Biletinial , DijitalSahne",
+      "Github": "https://github.com/Berkayergun16",
+      "cover_letter" : "blabla",
+      "image": "https://react.semantic-ui.com/images/avatar/large/jenny.jpg"
+    }
+  ],
+
+  "Employeers": [
+    {
+      "id": "1",
+      "firstName": "Ali",
+      "lastName": "Kaya",
+      "position_id": "1"
+    },
+    {
+      "id": "2",
+      "firstName": "Ahmet",
+      "lastName": "Aktaş",
+      "position_id": "2"
+    },
+    {
+      "id": "3",
+      "firstName": "Ayşe",
+      "lastName": "Tekin",
+      "position_id": "3"
+    }
+  ],
+
+  "Users": [
+    {
+      "id": "1",
+      "email": "candy@gmail.com",
+      "password": "1asd1223"
+    },
+    {
+      "id": "2",
+      "email": "berkay@gmail.com",
+      "password": "1sad2345"
+    },
+    {
+      "id": "3",
+      "email": "kubra@gmail.com",
+      "password": "sad13"
+    }
+  ],
+
+  "JobSeekers": [
+    {
+      "id": "1",
+      "first_name": "Ali",
+      "last_name": "Şen"
+    },
+
+    {
+      "id": "2",
+      "first_name": "Ayşe",
+      "last_name": "Aktepe"
+    },
+
+    {
+      "id": "3",
+      "first_name": "Mehmet",
+      "last_name": "Kaya"
+    }
+  ],
+
+  "JobPosition": [
+    {
+      "id": "1",
+      "name": "Mühendis"
+    },
+
+    {
+      "id": "2",
+      "name": "Stajyer"
+    },
+
+    {
+      "id": "3",
+      "name": "Hizmetli"
+    }
+  ],
+
+  "JobAdvertisement": [
+    {
+      "id": "1",
+      "employer": "Apple",
+      "job_position": "Software Developer",
+      "city": "İstanbul",
+      "job_description": "Açıklama1",
+      "min_salary": "4000",
+      "max_salary": "5000",
+      "Work_type": "Homeoffice"
+    },
+
+    {
+      "id": "2",
+      "employer": "microsoft",
+      "job_position": "Frontend Developer",
+      "city": "Ankara",
+      "job_description": "Açıklama2",
+      "min_salary": "3000",
+      "max_salary": "6000",
+      "Work_type": "office"
+    },
+
+    {
+      "id": "3",
+      "employer": "Samsung",
+      "job_position": "Mobil Developer",
+      "city": "İzmir",
+      "job_description": "Açıklama3",
+      "min_salary": "7000",
+      "max_salary": "8000",
+      "Work_type": "Freelancer"
+    },
+    {
+      "id":"4",
+  "employer":"KodlamaIo",
+  "job_position":"Backend Developer",
+  "city":"Ankara",
+  "job_description":"Description",
+  "min_salary":"7000",
+  "max_salary":"12000",
+  "Work_type":"Full Time" 
+  },
+  {
+      "id":"5",
+  "employer":"Miya Yazılım",
+  "job_position":"Software Database Support",
+  "city":"İzmir",
+  "job_description":"Description",
+  "min_salary":"4000",
+  "max_salary":"7000",
+  "Work_type":"Full Time" 
+  },
+  {
+      "id":"6",
+  "employer":"Biletix",
+  "job_position":"Web Developer",
+  "city":"Bursa",
+  "job_description":"Description",
+  "min_salary":"4000",
+  "max_salary":"10000",
+  "Work_type":"Full Time" 
+  },
+  {
+      "id":"7",
+  "employer":"HepsiBurada",
+  "job_position":"Frontend Developer",
+  "city":"İstanbul",
+  "job_description":"Description HepsiBurada",
+  "min_salary":"7000",
+  "max_salary":"10000",
+  "Work_type":"Part Time" 
+  }
+  ],
+
+  "Employer": [
+    {
+      "id": "1",
+      "company_name": "microsoft",
+      "company_adress": "....İstanbul",
+      "company_web_adress": "www.microsoft.com",
+      "company_number":"05654534534",
+      "company_email" : "info@microsoft.com"
+    },
+
+    {
+      "id": "2",
+      "company_name": "apple",
+      "company_adress": "....İstanbul",
+      "company_web_adress": "www.apple.com",
+      "company_number":"05654534534",
+      "company_email" : "info@apple.com"
+      
+    },
+
+    {
+      "id": "3",
+      "company_name": "oracle",
+      "company_adress": "....İstanbul",
+      "company_web_adress": "www.oracle.com",
+      "company_number":"05654534534",
+      "company_email" : "info@oracle.com"
+    },
+    {
+      "id": "4",
+      "company_name": "samsung",
+      "company_adress": "....İstanbul",
+      "company_web_adress": "www.samsung.com",
+      "company_number":"05654534534",
+      "company_email" : "info@samsung.com"
+    },
+    {
+      "id": "5",
+      "company_name": "Kodlamaio",
+      "company_adress": "....Ankara",
+      "company_web_adress": "www.kodlama.io",
+      "company_number":"05654534534",
+      "company_email" : "info@kodlamaio.com"
+    },
+    {
+      "id": "6",
+      "company_name": "Miya Yazılım",
+      "company_adress": "....İzmir",
+      "company_web_adress": "www.miya.com",
+      "company_number":"05654534534",
+      "company_email" : "info@miya.com"
+    },
+    {
+      "id": "7",
+      "company_name": "Biletix",
+      "company_adress": "....İstanbul",
+      "company_web_adress": "www.biletix.com",
+      "company_number":"05654534534",
+      "company_email" : "info@biletix.com"
+    },
+    {
+      "id": "8",
+      "company_name": "HepsiBurada",
+      "company_adress": "....İstanbul",
+      "company_web_adress": "www.hepsiburada.com",
+      "company_number":"05654534534",
+      "company_email" : "info@hb.com"
+    }
+  ],
+
+  "JobEmployer": [
+    {
+      "id": "1",
+      "user_companyName": "microsoft",
+      "job_id": "1"
+    },
+    {
+      "id": "2",
+      "user_companyName": "Apple",
+      "job_id": "2"
+    },
+    {
+      "id": "3",
+      "user_companyName": "Samsung",
+      "job_id": "3"
+    }
+  ]
+}

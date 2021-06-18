@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Grid } from "semantic-ui-react";
-import JobEmployerService from "../../services/JobEmployerService";
+import EmployersService from "../../services/EmployersService";
 import { useForm } from "react-hook-form";
-export default function JobEmployer() {
+export default function JobApplication() {
   
   
   const {
@@ -11,25 +11,22 @@ export default function JobEmployer() {
     formState: { errors },
   } = useForm();
 
-  const onSubmit = (data) => alert(
-    JSON.stringify(data),
-    window.alert("İşleminiz başarıyla Tamamlandı")
-    );
+  const onSubmit = (data) => alert(JSON.stringify(data),
+  window.alert("İşleminiz Personel tarafından onaylandıktan sonra yayına geçecektir.")
+  );
 
  
 
   const [jobEmployers, setJobEmployer] = useState([]);
 
   useEffect(() => {
-    let jobEmployerService = new JobEmployerService();
+    let jobEmployerService = new EmployersService();
     jobEmployerService
-      .getJobEmployer()
+      .getEmployers()
       .then((result) => setJobEmployer(result.data));
   }, []);
 
-  const gonder = () =>{
-    window.alert("İşleminiz Personel tarafından onaylandıktan sonra yayına geçecektir.");
-  }
+  
   return (
     <div>
       <form onSubmit={handleSubmit(onSubmit)}>
@@ -37,22 +34,22 @@ export default function JobEmployer() {
           <Grid.Row>
             <Grid.Column width={8}>
               <input
-                {...register("CompanyName", { required: true , pattern: /^[A-Za-z]+$/i})}
-                placeholder="Company Name"
+                {...register("FirstName", { required: true , pattern: /^[A-Za-z]+$/i})}
+                placeholder="First Name"
               />
-              {errors?.CompanyName?.type === "required" && (
+              {errors?.FirstName?.type === "required" && (
                 <p>Bu Alan Zorunludur.</p>
               )}
-              {errors?.CompanyName?.type === "pattern" && (
+              {errors?.FirstName?.type === "pattern" && (
         <p>Sadece Alfabetik karakter Kullanınız</p>
       )}
             </Grid.Column>
             <Grid.Column width={8}>
               <input
-                {...register("DepartmentName", { required: true })}
-                placeholder="Department Name"
+                {...register("LastName", { required: true })}
+                placeholder="Last Name"
               />
-              {errors?.DepartmentName?.type === "required" && (
+              {errors?.LastName?.type === "required" && (
                 <p>Bu Alan Zorunludur.</p>
               )}
             </Grid.Column>
@@ -60,30 +57,35 @@ export default function JobEmployer() {
           <Grid.Row>
             <Grid.Column width={8}>
               <input
-                {...register("Minsalary", { required: true, min: 0 , pattern:[1-9] })}
-                placeholder="Min Salary"
+                {...register("BirthDate", {
+                  required: true,
+                  min: 0,
+                  pattern: [1 - 9],
+                })}
+                placeholder="Birth Date"
               />
-              {errors?.CompanyName?.type === "required" && (
+              {errors?.BirthDate?.type === "required" && (
                 <p>Bu Alan Zorunludur.</p>
               )}
-              {errors?.CompanyName?.type === "pattern" && (
-        <p>Sadece Rakam Kullanınız</p>
-      )}
+              {errors?.BirthDate?.type === "pattern" && (
+                <p>Sadece Rakam Kullanınız</p>
+              )}
             </Grid.Column>
             <Grid.Column width={8}>
               <input
-                {...register("MaxSalary", { required: true , max:50000})}
-                placeholder="Max Salary"
+                {...register("PhoneNumber", { required: true })}
+                placeholder="Phone Number"
               />
-              {errors?.DepartmentName?.type === "required" && (
+              {errors?.PhoneNumber?.type === "required" && (
                 <p>Bu Alan Zorunludur.</p>
               )}
             </Grid.Column>
           </Grid.Row>
+         
           <Grid.Row>
             <Grid.Column width={8}>
               <select {...register("City", { required: true })}>
-                <option value="">Select City</option>
+                <option value="">which you looking in city</option>
                 <option value="Istanbul">İstanbul</option>
                 <option value="Ankara">Ankara</option>
                 <option value="Bursa">Bursa</option>
@@ -104,14 +106,30 @@ export default function JobEmployer() {
             </Grid.Column>
           </Grid.Row>
           <Grid.Row>
-            <Grid.Column width={16}>
-              <select {...register("Operation Time", { required: true })}>
+            <Grid.Column width={8}>
+              <select {...register("Job", { required: true })}>
+                <option value="">Select Job</option>
+                <option value="SoftwareDev">Software Developer</option>
+                <option value="Game Dev">Game Developer</option>
+                <option value="Front">Frontend Developer</option>
+                <option value="Human">Human Management</option>
+                <option value="House Keeper">House Keeper</option>
+                <option value="Asistan">Asistant</option>
+              </select>
+              
+              {errors?.Job?.type === "required" && (
+                <p>Bu Alan Zorunludur.</p>
+              )}
+            </Grid.Column>
+            <Grid.Column width={8}>
+              <select {...register("OperationTime", { required: true })}>
                 <option value="">Select Operation Time</option>
                 <option value="Fulltime">Full Time</option>
                 <option value="Parttime">Part Time</option>
+                <option value="Parttime">Intern</option>
               </select>
               
-              {errors?.Worktype?.type === "required" && (
+              {errors?.OperationTime?.type === "required" && (
                 <p>Bu Alan Zorunludur.</p>
               )}
             </Grid.Column>
@@ -119,19 +137,17 @@ export default function JobEmployer() {
           <Grid.Row>
             <Grid.Column width={16}>
             <input
-                {...register("Description", { required: true , pattern: /^[A-Za-z]+$/i, maxLength:240})}
-                placeholder="Description"
+                {...register("WorkExperience", { required: true , maxLength:360})}
+                placeholder="Please tell us your experiences"
               />
               {errors?.Description?.type === "required" && (
                 <p>Bu Alan Zorunludur.</p>
               )}
-              {errors?.Description?.type === "pattern" && (
-        <p>Sadece Alfabetik karakter Kullanınız</p>
-      )}
+              
               {errors?.Description?.type === "maxLength" && (
-        <p>Maximum 240 karakter Kullanınız.</p>
+        <p>Maximum 360 karakter Kullanınız.</p>
       )}
-              <input type="submit"  />
+              <input type="submit" />
             </Grid.Column>
           </Grid.Row>
         </Grid>

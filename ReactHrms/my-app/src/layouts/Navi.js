@@ -19,7 +19,7 @@ function Navi() {
 
   return (
     <div>
-      <Menu inverted fixed="top">
+      <Menu color="red" inverted fixed="top" size="large">
         <Container>
           <Menu.Item as={NavLink} to="/" name="Anasayfa" />
           <Menu.Item as={NavLink} to="/JobEmployer" name="İş İlani Ver"/>

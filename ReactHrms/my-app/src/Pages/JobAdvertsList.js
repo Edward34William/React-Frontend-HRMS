@@ -1,10 +1,11 @@
 import React from "react";
 import { Button, Table } from "semantic-ui-react";
-import JobAdvertisementService from "../../services/JobAdvertisementService";
 import { useEffect, useState } from "react";
 import { NavLink,Link } from 'react-router-dom';
+import JobAdvertisementService from "../services/JobAdvertisementService";
 
-export default function JobAdverts() {
+export default function JobAdvertsList() {
+
   const [JobAdverts, setJobAdverts] = useState([]);
 
   useEffect(() => {
@@ -15,7 +16,7 @@ export default function JobAdverts() {
   }, []);
   return (
     <div>
-      <Table inverted>
+      <Table color="red" size="large" className="table">
         <Table.Header>
           <Table.Row>
             <Table.HeaderCell>Employer</Table.HeaderCell>
@@ -30,11 +31,11 @@ export default function JobAdverts() {
         <Table.Body>
           {JobAdverts.map((adverts) => (
             <Table.Row key={adverts.id}>
-              <Table.Cell>{adverts.employer}</Table.Cell>
+              <Table.Cell > <strong>{adverts.employer}</strong> </Table.Cell>
               <Table.Cell>{adverts.job_position}</Table.Cell>
               <Table.Cell>{adverts.city}</Table.Cell>
 
-              <Table.Cell><Button><Link to={`/JobAdverstDetails/${adverts.id}`}> See Detail</Link>  </Button></Table.Cell>
+              <Table.Cell><Button color="red"><Link to={`/JobAdvertisement/${adverts.id}`}><b className="text-color">See Detail</b></Link>  </Button></Table.Cell>
             </Table.Row>
           ))}
         </Table.Body>
