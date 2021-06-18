@@ -5,3 +5,8 @@
 <img src="uml.png"></img>
 <img src="Screenshot_8.png"></img>
 <img src="Screenshot_9.png"></img>
+
+
+<p>18.06.2021 updated. </p>
+<p>Cv Details page added. </p>
+<p></p>
